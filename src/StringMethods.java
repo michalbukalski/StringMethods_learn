@@ -24,5 +24,9 @@ public class StringMethods {
         System.out.println(newDate2.replaceFirst("/",":"));
         System.out.println(newDate2.replaceAll("/","---"));
 
+        System.out.println("ABC\n".repeat(5).indent(8));
+
+        System.out.println("-".repeat(20));
+
     }
 }
