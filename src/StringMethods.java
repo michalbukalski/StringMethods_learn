@@ -6,5 +6,23 @@ public class StringMethods {
         int startingIndex = birthDate.indexOf("1982");
         System.out.println("startingIndex = "+startingIndex);
         System.out.println("Birth year = "+birthDate.substring(startingIndex));
+
+        System.out.println("Month = " + birthDate.substring(3,5));
+
+        String newDate = String.join("-", "25","11","1982");
+        System.out.println("newDate = "+newDate);
+
+        String newDate2 = "25";
+        newDate2 = newDate2.concat("/");
+        newDate2 = newDate2.concat("11");
+        newDate2 = newDate2.concat("/");
+        newDate2 = newDate2.concat("1982");
+        System.out.println("newDate2 = "+newDate2);
+
+        System.out.println(newDate2.replace("/","*"));
+
+        System.out.println(newDate2.replaceFirst("/",":"));
+        System.out.println(newDate2.replaceAll("/","---"));
+
     }
 }
