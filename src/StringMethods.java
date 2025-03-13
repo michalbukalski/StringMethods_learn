@@ -28,5 +28,7 @@ public class StringMethods {
 
         System.out.println("-".repeat(20));
 
+        System.out.println("ABC\n".repeat(5).indent(-100));
+
     }
 }
