@@ -22,6 +22,11 @@ public class Main {
 
         builderPlus.deleteCharAt(16).insert(16, 'G');
         System.out.println(builderPlus);
+
+        System.out.println("----------------------------------");
+
+        builderPlus.reverse().setLength(7);
+        System.out.println(builderPlus);
     }
 
     public static void printInformation(String string){
