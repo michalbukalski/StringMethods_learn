@@ -11,8 +11,17 @@ public class Main {
         printInformation(helloWorldBuilder);
 
         helloWorld.concat(" have a nice day");
-        helloWorldBuilder.append(" have a nice day");
+        helloWorldBuilder.append(" and have a nice day");
         System.out.println(helloWorldBuilder);
+
+        System.out.println("----------------------------------");
+
+        StringBuilder builderPlus = new StringBuilder("Hello"+" World");
+        builderPlus.append(" and goodbye");
+        System.out.println(builderPlus);
+
+        builderPlus.deleteCharAt(16).insert(16, 'G');
+        System.out.println(builderPlus);
     }
 
     public static void printInformation(String string){
